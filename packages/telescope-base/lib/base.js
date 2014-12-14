@@ -137,10 +137,10 @@ postMeta = [
     template: 'postInfo',
     order: 1
   },
-  {
+  /*{
     template: 'postCommentsLink',
     order: 3
-  },
+  },*/
   {
     template: 'postAdmin',
     order: 5
