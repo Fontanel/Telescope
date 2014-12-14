@@ -54,17 +54,31 @@
 
     .post-bar {
       position: relative;
-      height: 50px;
+      height: 80px;
+      display: none;
+    }
+
+    .template-posts_list .post-bar {
+      display: block;
     }
 
     .submit.button {
-      border-radius: none;
+      border-radius: 0;
       left: 0;
       right: 0;
       position: absolute;
+      margin-top: 10px;
       margin-left: auto;
       margin-right: auto;
-      width: 100px;
+      width: 50px;
+      line-height: 33px;
+      height: 50px;
+      vertical-align: middle;
+
+      font-size: 44px;
+      font-family: "proxima-nova",sans-serif;
+      font-style: normal;
+      font-weight: bold;
     }
 
     body {
@@ -90,7 +104,7 @@
       font-size: 24px;
     }
 
-    .posts-wrapper{
+    .posts-wrapper {
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
       box-shadow: none;
@@ -116,12 +130,12 @@
     }
 
     .post-meta {
-      color: #999999;
+      color: #666;
       font-size: 14px;
     }
 
     .post-meta a {
-      color: #999999;
+      color: #666;
       font-weight: normal;
     }
 
