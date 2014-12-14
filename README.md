@@ -7,7 +7,7 @@ Note that Telescope is distributed under the [MIT License](http://opensource.org
 ### We Need Your Help!
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/TelescopeJS/Telescope?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-A lot of work has already gone into Telescope, but it needs that final push to reach its full potential. 
+A lot of work has already gone into Telescope, but it needs that final push to reach its full potential.
 
 So if you'd like to be part of the project, please check out the [roadmap](https://trello.com/b/oLMMqjVL/telescope-roadmap) and [issues](https://github.com/TelescopeJS/Telescope/issues) to see if there's anything you can help with.
 
@@ -26,3 +26,9 @@ Start hacking on this app on
 in seconds:
 
 [![Hack TelescopeJS/Telescope on Nitrous.IO](https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png)](https://www.nitrous.io/hack_button?source=embed&runtime=nodejs&repo=TelescopeJS%2FTelescope&file_to_open=README.nitrous.md)
+
+### Changes made for DutchDesignNews:
+
+#### Search disabled
+
+Disabled search by removing the package. To enable search again, run `meteor add telescope-search`.
