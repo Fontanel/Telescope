@@ -21,8 +21,25 @@
         color: {{getSetting "headerTextColor"}};
       }
     .logo-image a{
-      height:{{getSetting "logoHeight"}}px; 
-      width:{{getSetting "logoWidth"}}px; 
+      height:{{getSetting "logoHeight"}}px;
+      width:{{getSetting "logoWidth"}}px;
+    }
+    .header .logo {
+      text-align: left;
+      top: 0;
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+    }
+
+    .header .primary-nav {
+      left: 350px;
+    }
+
+    .header {
+      background-color: #000;
+      height: 70px;
+      box-sizing: border-box;
     }
   </style>
 </template>
