@@ -86,11 +86,7 @@
       line-height: 33px;
       height: 50px;
       vertical-align: middle;
-
       font-size: 44px;
-      font-family: "proxima-nova",sans-serif;
-      font-style: normal;
-      font-weight: bold;
     }
 
     body {
@@ -135,10 +131,27 @@
       font-weight: 500;
     }
 
-    .post-domain, .post-meta, .get-title-link.inline-link {
+    .post-domain, .post-meta, .get-title-link.inline-link, .post-share > a .action, .post-discuss > a .action, .submit.button {
       font-family: "proxima-nova",sans-serif;
       font-style: normal;
       font-weight: 100;
+    }
+
+    .share-options {
+      border: none;
+    }
+
+    @media screen and (min-width: 30em) {
+      .share-options:before {
+        height: 0;
+        width: 0;
+      }
+    }
+
+    .share-options:before {
+      display: none;
+      height: 0;
+      width: 0;
     }
 
     .post-meta {
@@ -216,5 +229,9 @@
     }
 
     .content-wrapper .newsletter-bar { display: none; }
+
+    .post-share > a .action, .post-discuss > a .action {
+      color: #666;
+    }
   </style>
 </template>
