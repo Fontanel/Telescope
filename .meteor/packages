@@ -57,7 +57,6 @@ telescope-theme-base
 telescope-module-share
 telescope-api
 telescope-rss
-telescope-search
 telescope-tags
 telescope-theme-hubble
 telescope-email
