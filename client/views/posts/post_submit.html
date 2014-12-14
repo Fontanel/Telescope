@@ -1,17 +1,15 @@
 <template name="post_submit">
+  <h2 class="minion-pro medium">Submit news</h2>
   <div class="grid submit">
     <form class="grid-block form-horizontal">
       <div class="control-group">
-        <label class="control-label">{{i18n "URL"}}</label>
-        <div class="controls"><input id="url" type="text" value="" /></div>
+        <div class="controls"><input id="url" type="text" value="" placeholder="{{i18n "URL"}}" /></div>
       </div>
       <div class="control-group">
-        <label class="control-label">{{i18n "Title"}}</label>
-        <div class="controls"><input id="title" type="text" value="" /><a href="#" class="get-title-link inline-link">{{i18n "Suggest title"}}</a></div>
+        <div class="controls"><input id="title" type="text" value="" placeholder="{{i18n "Title"}}" /><a href="#" class="get-title-link inline-link">{{i18n "Suggest title"}}</a></div>
       </div>
       <div class="control-group">
-        <label class="control-label">{{i18n "Body"}}</label>
-        <div class="controls" id="editor"><textarea id="body" value="" class="input-xlarge"></textarea></div>
+        <div class="controls" id="editor"><textarea id="body" value="" class="input-xlarge" placeholder="{{i18n "Body"}}"></textarea></div>
       </div>
       {{#if categoriesEnabled}}
       <div class="control-group">
@@ -51,7 +49,7 @@
             <label class="radio inline">
               <input id="status_approved" type="radio" value="2" name="status" checked /> {{i18n "Approved"}}
             </label>
-            <label class="radio inline">  
+            <label class="radio inline">
               <input id="status_rejected" type="radio" value="3" name="status"/> {{i18n "Rejected"}}
             </label>
           </div>
@@ -69,7 +67,7 @@
         </div>
       {{/if}}
       <div class="form-actions">
-        <input type="submit" class="button" value="{{i18n "Submit"}}" />
+        <input type="submit" class="button minion-pro medium" value="{{i18n "Submit"}}" />
       </div>
     </form>
   </div>
