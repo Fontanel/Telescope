@@ -103,10 +103,10 @@ modulePositions = [
 ];
 
 postModules = [
-  {
+  /*{
     template: 'postUpvote',
-    position: 'left-left'
-  },
+    position: 'center-center'
+  },*/
   {
     template: 'postActions',
     position: 'left-right'
