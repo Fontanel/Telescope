@@ -33,7 +33,7 @@ viewNav = [
   {
     route: 'posts_digest_default',
     label: 'Digest'
-  } 
+  }
 ];
 
 // ------------------------------------- Views -------------------------------- //
@@ -63,9 +63,9 @@ viewParameters.best = function (terms) {
 viewParameters.pending = function (terms) {
   return {
     find: {
-      status: 1, 
+      status: 1,
       postedAt: {$lte: null}
-    }, 
+    },
     options: {sort: {createdAt: -1}}
   };
 }
@@ -74,7 +74,7 @@ viewParameters.digest = function (terms) {
   return {
     find: {
       postedAt: {
-        $gte: terms.after, 
+        $gte: terms.after,
         $lt: terms.before
       }
     },
@@ -112,7 +112,7 @@ postModules = [
     position: 'left-right'
   },
   {
-    template: 'postContent', 
+    template: 'postContent',
     position: 'center-center'
   },
   {
@@ -127,7 +127,7 @@ postHeading = [
     order: 1
   },
   {
-    template: 'postDomain', 
+    template: 'postDomain',
     order: 5
   }
 ]
@@ -140,9 +140,9 @@ postMeta = [
   {
     template: 'postCommentsLink',
     order: 3
-  },  
+  },
   {
-    template: 'postAdmin', 
+    template: 'postAdmin',
     order: 5
   }
 ]
@@ -163,7 +163,7 @@ commentSubmitClientCallbacks = [];
 commentSubmitMethodCallbacks = [];
 commentAfterSubmitMethodCallbacks = [];
 
-commentEditRenderedCallbacks = []; 
+commentEditRenderedCallbacks = [];
 commentEditClientCallbacks = [];
 commentEditMethodCallbacks = []; // not used yet
 commentAfterEditMethodCallbacks = []; // not used yet
