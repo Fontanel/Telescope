@@ -1,8 +1,8 @@
 <template name="css">
   <style>
-      body{
+      /*body{
         background: {{getSetting "backgroundCSS"}};
-      }
+      }*/
       input[type="submit"], button, .button, .auth-buttons #login-buttons #login-buttons-password, .btn, .error, .mobile-menu-button, .login-link-text{
         background-color: {{getSetting "buttonColor"}} !important;
         color: {{getSetting "buttonTextColor"}} !important;
@@ -75,6 +75,20 @@
       border-bottom: 1px solid rgba(229, 230, 228, 0.3);
     }
 
+    .post-info {
+      padding: 16px 22px 24px;
+    }
+
+    .post-heading {
+      line-height: normal;
+      margin-bottom: 4px;
+    }
+
+    .post-heading .post-title {
+      color: #565A5C;
+      font-size: 24px;
+    }
+
     .posts-wrapper{
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
@@ -92,6 +106,20 @@
       font-family: "minion-pro", serif;
       font-style: normal;
       font-weight: 500;
+    }
+
+    .post-domain, .post-meta {
+      font-family: "proxima-nova",sans-serif;
+      font-style: normal;
+      font-weight: 100;
+    }
+
+    .post-meta {
+      font-size: 14px;
+    }
+
+    .upvote-link span {
+      color: #3D57A7;
     }
   </style>
 </template>
