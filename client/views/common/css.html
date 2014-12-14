@@ -16,14 +16,25 @@
       .post-content .post-upvote .upvote-link.voted i.icon-check{
         /*color: {{getSetting "secondaryColor"}};*/
       }
+
+      form input[type="text"]:focus, form input[type="password"]:focus, form input[type="number"]:focus, form input[type="email"]:focus, form textarea:focus, form .login-form input:focus, form input.form-control:focus, .accounts-dialog input[type="text"]:focus, .accounts-dialog input[type="password"]:focus, .accounts-dialog input[type="number"]:focus, .accounts-dialog input[type="email"]:focus, .accounts-dialog textarea:focus, .accounts-dialog .login-form input:focus, .accounts-dialog input.form-control:focus {
+        border-color: #3D57A7;
+        border-width: 2px;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+
       .header{
         background-color: {{getSetting "headerColor"}};
         color: {{getSetting "headerTextColor"}};
       }
+
     .logo-image a{
       height:{{getSetting "logoHeight"}}px;
       width:{{getSetting "logoWidth"}}px;
     }
+
     .header .logo {
       text-align: left;
       top: 0;
@@ -123,7 +134,7 @@
       font-weight: 500;
     }
 
-    .post-domain, .post-meta {
+    .post-domain, .post-meta, .get-title-link.inline-link {
       font-family: "proxima-nova",sans-serif;
       font-style: normal;
       font-weight: 100;
@@ -163,6 +174,8 @@
       background-color: #3D57A7;
       border-radius: 0;
     }
+
+    .get-title-link.inline-link { color: #3D57A7; }
 
     form .control-group .controls, form .form-group .controls, form .at-input .controls, .accounts-dialog .control-group .controls, .accounts-dialog .form-group .controls, .accounts-dialog .at-input .controls { max-width: 490px; }
 
