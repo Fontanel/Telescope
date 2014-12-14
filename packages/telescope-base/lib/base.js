@@ -11,7 +11,7 @@ addToSettingsSchema = [];
 // array containing nav items; initialize with views menu and admin menu
 primaryNav = [/*'viewsMenu',*/ 'adminMenu'];
 
-secondaryNav = ['userMenu', 'notificationsMenu', 'submitButton'];
+secondaryNav = ['userMenu', 'notificationsMenu', /*'submitButton'*/];
 
 // array containing items in the admin menu
 adminNav = [];
